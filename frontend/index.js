@@ -13,15 +13,15 @@ $(document).ready(function () {
     //circleColor: use @default
     data: {
       items: [
-        {text: "Montana", count: "236"},
-        {text: "New York", count: "382"},
-        {text: "Hawaii", count: "170"},
-        {text: "New Jersey", count: "123"},
+        {text: "Montana", count: "23"},
+        {text: "New York", count: "38"},
+        {text: "Hawaii", count: "17"},
+        {text: "New Jersey", count: "11"},
         {text: "Texas", count: "12"},
-        {text: "Idaho", count: "170"},
-        {text: "Indiana", count: "382"},
+        {text: "Idaho", count: "17"},
+        {text: "Indiana", count: "38"},
         {text: "Colorado", count: "10"},
-        {text: "Maine", count: "170"},
+        {text: "Maine", count: "17"},
       ],
       eval: function (item) {return item.count;},
       classed: function (item) {return item.text.split(" ").join("");}
