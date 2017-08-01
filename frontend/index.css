@@ -16,3 +16,16 @@ h1 {
   text-align: center;
   font-size: 35px;
 }
+
+h2 {
+  color: white;
+  font-family: Source Sans Pro, sans-serif;
+  font-weight: 500;
+  fill: white;
+  text-align: center;
+}
+
+a {
+  color: #002080;
+  font-weight: bold;
+}

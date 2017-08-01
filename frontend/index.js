@@ -13,15 +13,15 @@ $(document).ready(function () {
     //circleColor: use @default
     data: {
       items: [
-        {text: "Las Vegas, NV", count: "23"},
-        {text: "Austin, TX", count: "38"},
-        {text: "Seattle, WA", count: "17"},
-        {text: "Denver, CO", count: "2"},
-        {text: "Raleigh/Durham, NC", count: "12"},
-        {text: "Aruba", count: "10"},
-        {text: "Grand Cayman", count: "15"},
-        {text: "Havana, Cuba", count: "10"},
-        {text: "New Orleans, LA", count: "27"},
+        {text: "Las Vegas, NV", count: "23", id: 1},
+        {text: "Austin, TX", count: "38", id: 2},
+        {text: "Seattle, WA", count: "17", id: 3},
+        {text: "Denver, CO", count: "2", id: 4},
+        {text: "Tampa, FL", count: "12", id: 5},
+        {text: "Aruba", count: "10", id: 6},
+        {text: "Grand Cayman", count: "15", id: 7},
+        {text: "Havana, Cuba", count: "10", id: 8},
+        {text: "New Orleans, LA", count: "27", id: 9},
       ],
       eval: function (item) {return item.count;},
       classed: function (item) {return item.text.split(" ").join("");}
@@ -37,7 +37,7 @@ $(document).ready(function () {
             "font-family": "Source Sans Pro, sans-serif",
             //"font-weight": "700",
             "text-anchor": "middle",
-            "fill": "white"
+            "fill": "white",
           },
           attr: {dy: "65px"},
           centralClick: function() {
