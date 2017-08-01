@@ -13,15 +13,15 @@ $(document).ready(function () {
     //circleColor: use @default
     data: {
       items: [
-        {text: "Montana", count: "23"},
-        {text: "New York", count: "38"},
-        {text: "Hawaii", count: "17"},
-        {text: "New Jersey", count: "11"},
-        {text: "Texas", count: "12"},
-        {text: "Idaho", count: "17"},
-        {text: "Indiana", count: "38"},
-        {text: "Colorado", count: "10"},
-        {text: "Maine", count: "17"},
+        {text: "Las Vegas, NV", count: "23"},
+        {text: "Austin, TX", count: "38"},
+        {text: "Seattle, WA", count: "17"},
+        {text: "Denver, CO", count: "2"},
+        {text: "Raleigh/Durham, NC", count: "12"},
+        {text: "Aruba", count: "10"},
+        {text: "Grand Cayman", count: "15"},
+        {text: "Havana, Cuba", count: "10"},
+        {text: "New Orleans, LA", count: "27"},
       ],
       eval: function (item) {return item.count;},
       classed: function (item) {return item.text.split(" ").join("");}
@@ -30,7 +30,7 @@ $(document).ready(function () {
       {
         name: "central-click",
         options: {
-          text: "(See friends)",
+          text: "(See deal)",
           style: {
             "font-size": "12px",
             "font-style": "italic",
