@@ -1,3 +1,4 @@
+
 $(document).ready(function () {
   var bubbleChart = new d3.svg.BubbleChart({
     supportResponsive: true,
@@ -13,15 +14,16 @@ $(document).ready(function () {
     //circleColor: use @default
     data: {
       items: [
-        {text: "Las Vegas, NV", count: "23", id: 1},
-        {text: "Austin, TX", count: "38", id: 2},
-        {text: "Seattle, WA", count: "17", id: 3},
-        {text: "Denver, CO", count: "27", id: 4},
-        {text: "Tampa, FL", count: "12", id: 5},
-        {text: "Aruba", count: "19", id: 6},
-        {text: "Grand Cayman", count: "15", id: 7},
+        {text: "Bahamas", count: "23", id: 1},
+        {text: "Mexico City, Mexico", count: "68", id: 2},
+        {text: "Santo Domingo, DR", count: "61", id: 3},
+        {text: "Lima, Peru", count: "27", id: 4},
+        {text: "San Jose, Costa Rica", count: "62", id: 5},
+        {text: "Aruba", count: "59", id: 6},
+        {text: "Grand Cayman", count: "45", id: 7},
         {text: "Havana, Cuba", count: "58", id: 8},
-        {text: "New Orleans, LA", count: "27", id: 9},
+        {text: "Kingston, Jamaica", count: "27", id: 9},
+        {text: "Bogota, Colombia", count: "24", id: 10},
       ],
       eval: function (item) {return item.count;},
       classed: function (item) {return item.text.split(" ").join("");}
@@ -32,7 +34,7 @@ $(document).ready(function () {
         options: {
           text: "(See deal)",
           style: {
-            "font-size": "12px",
+            "font-size": "10px",
             "font-style": "italic",
             "font-family": "Source Sans Pro, sans-serif",
             //"font-weight": "700",
@@ -68,10 +70,10 @@ $(document).ready(function () {
               textField: "text",
               classed: {text: true},
               style: {
-                "font-size": "14px",
+                "font-size": "12px",
                 "font-family": "Source Sans Pro, sans-serif",
                 "text-anchor": "middle",
-                fill: "white"
+                fill: "white",
               },
               attr: {
                 dy: "20px",
@@ -82,7 +84,10 @@ $(document).ready(function () {
           ],
           centralFormat: [
             {// Line #0
-              style: {"font-size": "50px"},
+              style: {
+                "font-size": "50px",
+
+            },
               attr: {}
             },
             {// Line #1

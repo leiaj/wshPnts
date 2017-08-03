@@ -15,7 +15,14 @@ h1 {
   font-weight: bold;
 }
 
-h2 {
+h3 {
+  font-family: Source Sans Pro, sans-serif;
+  font-weight: 500;
+  fill: white;
+  text-align: center;
+}
+
+h4 {
   font-family: Source Sans Pro, sans-serif;
   font-weight: 500;
   fill: white;
@@ -26,4 +33,9 @@ a {
   color: #0000b3;
   font-weight: bold;
   text-decoration: none;
+}
+
+#icon{
+  width:15x;
+  height:15px;
 }
